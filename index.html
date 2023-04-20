@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="caption">
+            <h3>
+                Send <span class="italic">an email</span>
+            </h3>
+        </div>
+    </div>
+   
+        <form class="form" action="result.html" method="get">
+            <div class="form-container" >
+                <label for="email">Email</label>
+                <input class="line" type="email" name="email" id="email" placeholder="Your email" required/>
+                <label for="login">Name</label>
+                <input class="line" type="login" name="login" id="login" placeholder ="Your name" required/>  
+                <label for="textarea">Message</label>
+                 <input class="line" type="textarea" name="textarea" id="textarea" placeholder="Start typing here" 
+                cols="30" rows="1"required/>
+                <label for="project type">Project type</label>
+                    <select class="line" name="Project type" id="project type" required>
+                        <option value="0">Choose</option>
+                        <option value="1">Reserve for personal event</option>
+                        <option value="2">Buy tickets for a next concert</option>
+                        <option value="3">Reserve from a venue</option>
+                        <option value="4">Other</option>
+                        <label for="project type">Project type</label>
+                    </select>
+                    <div>
+                        <input type="checkbox" name="agree" id="agree" required/>
+                        <label for="agree">I agree to receive ocasional newsletter with latest news and updates</label>
+                    </div>
+                <button class="botton">Send</button>
+            </div>
+       
+        </form>
+</body>
+</html>
